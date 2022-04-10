@@ -1,0 +1,103 @@
+/* 
+////// For this challenge ///////
+
+- All text is in the text.md file
+
+// Requirements
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
+
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    max-width: 1300px;
+}
+.first{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    background-color: #F3EED9;
+    height: 80vh;
+    /* padding: 50px 0; */
+}
+.first-small{
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+}
+.heading-text{
+    font-size: 60px;
+    font-family: 'Playfair Display', sans-serif;
+    color: #824936;
+    margin: 0;
+}
+.small-heading-text{
+    font-size: 36px;
+    font-family: 'Playfair Display', sans-serif;
+    color: #824936;
+    text-align: center;
+}
+.second-text{
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 21px;
+    gap: 60px;
+}
+.third{
+    background-color: #222C2A;
+}
+.third-data{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+.third-text{
+    color: white;
+    width: 50%;
+}
+.img{
+    width: 45%;
+    /* height: auto; */
+}
+.heading-third{
+    font-size: 36px;
+    font-family: 'Playfair Display', sans-serif; 
+}
+.fourth{
+    background-color: #824936;
+}
+.fourth-data{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 60px;
+}
+@media (max-width:600px) {
+    .third-data,.fourth-data{
+        display: block;
+    }
+    .third-text,
+    .img{
+        width: 100%;
+    }
+    .second-text{
+        display: block;
+    }
+}
